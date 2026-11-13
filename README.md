@@ -25,7 +25,7 @@ This repository demonstrates **complete dual-paradigm mastery**:
 ## Architectural Taxonomy
 
 ```mermaid
-flowchart TD
+flowchart LR
     ML["Machine Learning Repository"] --> SUP["Supervised Learning"]
     ML --> UNSUP["Unsupervised Learning"]
     ML --> FOUND["Foundations & Theory"]
@@ -43,7 +43,7 @@ flowchart TD
     CLAS --> DT["ID3 & CART Decision Trees (Exp 9, 10)"]
     CLAS --> SVM["Support Vector Machines & Kernels (Exp 11, 12)"]
     CLAS --> NB["Multinomial & Bernoulli Naive Bayes (Exp 7)"]
-    CLAS --> MLP["Multilayer Perceptrons & Backprop (Exp 13, 14, 15)"]
+    CLAS --> MLP["Multilayer Perceptrons & Backprop (Exp 13-15)"]
 
     ENS --> BAG["Bagging Classifier (Exp 19)"]
     ENS --> BOOST["AdaBoost Classifier (Exp 19)"]
@@ -60,10 +60,11 @@ flowchart TD
 
 ## Dual-Structure Repository Layout
 
-This repository is curated to serve two distinct needs:
+This repository is curated to serve three distinct needs:
 
 1. **In-Depth & Production Stack (`01_` through `14_`):** Production-quality software engineering with modular architecture, strict type hints, full matrix calculus derivations, numerical stability checks, unit testing, and side-by-side benchmark harnesses.
 2. **Laboratory Reference Suite ([`lab_reference/`](lab_reference)):** Canonical, self-contained implementations designed for standardized academic curricula (PCCSL508), rapid code review, and practical examination patterns following the universal 5-stage machine learning lifecycle.
+3. **Comprehensive Theoretical & Conceptual Reference ([`THEORETICAL_AND_CONCEPTUAL_QA.md`](THEORETICAL_AND_CONCEPTUAL_QA.md)):** Master compendium containing 14 structured modules and over 150 detailed questions and answers covering machine learning theory, mathematical derivations, experiment analyses, and framework mechanics.
 
 ---
 

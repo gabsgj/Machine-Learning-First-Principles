@@ -71,7 +71,9 @@ flowchart LR
 
 ---
 
-## Technical Viva & Oral Examination Quick Reference
+## Technical Theory & Conceptual Quick Reference
+
+> For the comprehensive 14-module question and answer reference covering all theoretical foundations, mathematical derivations, and experiment-specific analyses, see [**`THEORETICAL_AND_CONCEPTUAL_QA.md`**](../THEORETICAL_AND_CONCEPTUAL_QA.md).
 
 1. **Why do we append a column of ones to feature matrices?**
    It allows the bias/intercept $b$ to be integrated into parameter vector $\theta = [b, w_1, \dots, w_d]^T$, permitting the model equation to be computed as a single inner product $\hat{y} = X_g \theta$.
