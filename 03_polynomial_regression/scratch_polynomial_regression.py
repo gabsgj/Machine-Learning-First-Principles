@@ -72,7 +72,8 @@ if __name__ == "__main__":
     import os
     print("=== Demo: Polynomial Regression from Scratch on Auto MPG ===")
     
-    data_path = "/Users/gabriel/Projects/ML/data/auto-mpg.csv"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_path = os.path.join(base_dir, "data", "auto-mpg.csv")
     if os.path.exists(data_path):
         df = pd.read_csv(data_path).dropna()
         # Ensure horsepower is numeric

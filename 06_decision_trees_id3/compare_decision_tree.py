@@ -28,7 +28,8 @@ def benchmark_scratch_id3_adult():
     print("==================================================")
     print("1. ID3 SCRATCH VS SKLEARN: Adult Income Dataset")
     print("==================================================")
-    data_path = "/Users/gabriel/Projects/ML/data/adult.csv"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_path = os.path.join(base_dir, "data", "adult.csv")
     if not os.path.exists(data_path):
         print("adult.csv not found, skipping adult benchmark.")
         return

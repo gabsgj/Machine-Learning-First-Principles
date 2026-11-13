@@ -48,7 +48,8 @@ if __name__ == "__main__":
     import os
     print("=== Demo: Scikit-Learn Polynomial Regression with Cross-Validation ===")
     
-    data_path = "/Users/gabriel/Projects/ML/data/auto-mpg.csv"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_path = os.path.join(base_dir, "data", "auto-mpg.csv")
     if os.path.exists(data_path):
         df = pd.read_csv(data_path).dropna()
         df = df[pd.to_numeric(df["horsepower"], errors="coerce").notnull()]

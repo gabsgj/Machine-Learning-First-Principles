@@ -92,7 +92,8 @@ def benchmark_adult_income_dataset():
     print("==================================================")
     print("LOGISTIC REGRESSION: Adult Income (Census)")
     print("==================================================")
-    data_path = "/Users/gabriel/Projects/ML/data/adult.csv"
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    data_path = os.path.join(base_dir, "data", "adult.csv")
     if not os.path.exists(data_path):
         print(f"Dataset {data_path} not found. Skipping Adult benchmark.")
         return
